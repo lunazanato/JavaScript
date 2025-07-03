@@ -7,22 +7,34 @@
 </head>
 <style>
     body{
-        background-color: rgb(202, 230, 220);
+        background-color: rgb(198, 229, 255);
         font-family: Arial, Helvetica, sans-serif;
-        color: blue;
+        color: rgb(53, 53, 170);
     }
 
     strong{
-        color: rgb(158, 158, 255);
+        color: rgb(0, 0, 255);
     }
 </style>
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Clique em mim</p>
     <p>Aprendendo a usar <strong>DOM</strong> em <strong>JavaScript.</strong></p>
+    <div id="msg">Clique em mim</div>
     <script>
-
+        window.document.write('Olá,mundo! <br/>')
+        window.document.write(window.document.charset, '<br/>')
+        window.document.write(window.navigator.appName, '<br/>')
+        window.document.write(window.document.URL ,'<br/>') /* aqui eu mostro a url do browser usado atualmente */
+        var p1 = window.document.getElementsByTagName('p')[0] /* aqui eu defini a variável do elemente escolhido como p1, escolho qual elemento eu quero ('p') e se é o primeiro, o segundo, o terceiro e assim sucessivamente [0] */
+        window.document.write('está escrito assim: ' + p1.innerText) /* aqui eu chamei um dos parágrafos escolhidos.(se eu colocar 'innerHtml', ele já vem formatado com strong e outras tags que tiver) */
+        p1.style.color = 'blue' /* aqui eu mudei a cor do parágrafo usando a variante do parágrafo que defini anteriormente e chamando o comando style.color */
+        var d = window.document.getElementById('msg') /* aqui escolhi um elemento id */
+        d.style.background = 'green' /* defini o background da variante d que é */
+        d.innerText = 'estou aguardando...'/* modifiquei a div */
+        /* também é possível modificar de outra forma: (window.document.getElementById('msg').innerText = 'Olá!') */
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'gray'
     </script>
 </body>
 </html>
