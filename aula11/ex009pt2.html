@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificando Nacionalidades</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+            color: blue;
+            background-color: rgb(185, 185, 185);
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificador de Nacionalidades</h1>
+    País: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var txtn = window.document.getElementById('txtnac')
+            var res = window.document.getElementById('res')
+            var nac = String(txtn.value)
+            if (nac == 'Brasil'){
+                res.innerHTML = `Você é brasileiro`
+            }else{
+                res.innerHTML = `Você é estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
