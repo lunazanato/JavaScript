@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica (parte 1)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Teste</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>Digite seu nome: <input type="text" name="txtnome" id="txtnome"></p>
+            <p>Digite sua idade: <input type="number" name="txtidade" id="txtidade"></p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name ="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+
+            <input type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
