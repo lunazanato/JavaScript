@@ -21,7 +21,7 @@ function finalizar(){
     if (idade.value <= 0 || nome.value == ''){
         res.innerHTML = '<br> ERRO. Verifique os dados e tente novamente'
     } else{
-        res.innerHTML = `<br> Seu nome é ${nome.value}, sua idade é ${idade.value} e seu sexo é ${genero}`
+        res.innerHTML = `<br> Seu nome é ${nome.value} <br> Sua idade é ${idade.value} <br> Seu sexo é ${genero}`
     }
 
 }
